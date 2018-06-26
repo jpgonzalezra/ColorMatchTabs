@@ -89,23 +89,23 @@ private extension MenuView {
     func layoutNavigationBar() {
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
         navigationBar.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        navigationBar.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        navigationBar.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         navigationBar.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        navigationBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        navigationBar.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
     
     func layoutTabs() {
         tabs.translatesAutoresizingMaskIntoConstraints = false
         tabs.leadingAnchor.constraint(equalTo: navigationBar.leadingAnchor).isActive = true
-        tabs.topAnchor.constraint(equalTo: navigationBar.topAnchor).isActive = true
+        tabs.topAnchor.constraint(equalTo: navigationBar.topAnchor, constant: 5).isActive = true
         tabs.trailingAnchor.constraint(equalTo: navigationBar.trailingAnchor).isActive = true
-        tabs.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        tabs.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     func layoutScrollMenu() {
         scrollMenu.translatesAutoresizingMaskIntoConstraints = false
         scrollMenu.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        scrollMenu.topAnchor.constraint(equalTo: navigationBar.bottomAnchor).isActive = true
+        scrollMenu.topAnchor.constraint(equalTo: topAnchor).isActive = true
         scrollMenu.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         scrollMenu.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
