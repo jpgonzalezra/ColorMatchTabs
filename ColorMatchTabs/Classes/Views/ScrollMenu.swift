@@ -97,7 +97,7 @@ open class ScrollMenu: UIScrollView {
         let first = min(index, indexOfVisibleItem) + 1
         let last = max(index, indexOfVisibleItem)
         hideContent(forRange: first..<last)
-        updateContentOffset(withIndex: index, animated: true)
+        updateContentOffset(withIndex: index, animated: false)
     }
  
     open func reloadData() {
